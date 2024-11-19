@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <h1 style={{ marginTop: "50px" }}>Welcome to My React Project Hub- II</h1>
-      <Link to="/tabs">
+      <Link to="/custom-tabs">
         <button>React Custom Tabs</button>
       </Link>
     </div>

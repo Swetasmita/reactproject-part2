@@ -1,0 +1,22 @@
+.home-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(81, 121, 240);
+    box-shadow: 0px 0px 7px #ccc;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+.home-container button{
+    padding: 10px 18px;
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    line-height: 1.4rem;
+    font-weight: 600;
+    background-color: #faf99c;
+    color: #000000;
+}

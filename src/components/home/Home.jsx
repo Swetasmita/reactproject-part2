@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home-container">
-      <h1 style={{ marginTop: "50px" }}>Welcome to My React Project Hub</h1>
+      <h1 style={{ marginTop: "50px" }}>Welcome to My React Project Hub- II</h1>
       <Link to="/tabs">
         <button>React Custom Tabs</button>
       </Link>

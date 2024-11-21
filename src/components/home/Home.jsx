@@ -9,6 +9,9 @@ const Home = () => {
       <Link to="/custom-tabs">
         <button>React Custom Tabs</button>
       </Link>
+      <Link to="/pagination">
+        <button>Pagination in React JS</button>
+      </Link>
     </div>
   );
 };

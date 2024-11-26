@@ -35,7 +35,7 @@ const Pagination = () => {
         {products.length > 0 && products ? (
           products.slice(page * 10 - 10, page * 10).map((prods) => {
             return (
-              <span className="products__single">
+              <span className="products__single" key={prods.id}>
                 <img src={prods.thumbnail} alt={prods.title} />
                 <span>{prods.title}</span>
               </span>

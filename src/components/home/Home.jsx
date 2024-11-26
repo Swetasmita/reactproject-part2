@@ -12,6 +12,9 @@ const Home = () => {
       <Link to="/pagination">
         <button>Pagination in React JS</button>
       </Link>
+      <Link to="/reactform">
+        <button>React Form Validation with Yup</button>
+      </Link>
     </div>
   );
 };

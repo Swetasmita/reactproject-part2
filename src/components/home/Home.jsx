@@ -15,6 +15,9 @@ const Home = () => {
       <Link to="/reactform">
         <button>React Form Validation with Yup</button>
       </Link>
+      <Link to="/registrationform">
+        <button>Registration Form</button>
+      </Link>
     </div>
   );
 };

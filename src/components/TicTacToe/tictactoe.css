@@ -1,0 +1,46 @@
+.tictactoe-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+}
+.board{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 40px;
+}
+.box{
+    width: 80px;
+    height:80px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size:38px;
+    font-weight: bold;
+    vertical-align: middle;  /* To make center display */
+    padding:20px;    
+}
+.box:hover{
+background-color: #fafafa;
+}
+.game-info{
+    margin-top: 50px;
+    font-size:18px;
+    font-weight: bold;
+}
+.game-info button{
+    padding: 8px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #888;
+    background-color: #6ba8e9;
+    cursor: pointer;
+    border-radius: 10px;   
+    margin-bottom: 20px;
+}
+.game-info button:hover{
+    background-color: #378be5;
+}

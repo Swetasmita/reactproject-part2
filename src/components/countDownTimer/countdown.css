@@ -1,0 +1,51 @@
+.timer-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: cadetblue;
+    color: #fff;
+    width:100%;
+    min-height:100vh;
+}
+.input-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+}
+.input-box > input{
+    height: 50px;
+    width: 60px;
+    margin:20px;
+    text-align:center;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+.timer-button{
+ height: 40px;
+ width: 80px;
+ border:none;
+ outline: none;
+ background-color: purple;
+ color: #fff;
+ border-radius: 5px;
+ cursor: pointer;
+ margin: 10px;
+ font-size: 1rem;
+ transition: background-color 0.3s, transform 0.2s;
+}
+
+.timer-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.timer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 100px;
+   }

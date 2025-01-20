@@ -18,6 +18,15 @@ const Home = () => {
       <Link to="/registrationform">
         <button>Registration Form</button>
       </Link>
+      <Link to="/likebuttons">
+      <button>Like Buttons</button>
+      </Link>
+      <Link to="/tictactoe">
+      <button>Tic-Tac-Toe Game</button>
+      </Link>
+      <Link to="/countdowntimer">
+      <button>Countdown Timer</button>
+      </Link>
     </div>
   );
 };

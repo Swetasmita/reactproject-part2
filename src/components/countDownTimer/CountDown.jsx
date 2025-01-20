@@ -4,18 +4,18 @@ import "./countdown.css";
 const CountDown = () => {
   const [isStart, setIsStart] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
+  const [hours, setHours] = useState("");
+  const [minutes, setMinutes] = useState("");
+  const [seconds, setSeconds] = useState("");
   const [timerId, setTimerId] = useState(0);
 
   //Reset function
   const handleReset = () => {
     setIsStart(false);
     // resetTimer();  
-    setHours(0);
-    setMinutes(0);
-    setSeconds(0);
+    setHours("");
+    setMinutes("");
+    setSeconds("");
     clearInterval(timerId);
   };
 
@@ -35,7 +35,7 @@ const CountDown = () => {
   const handleInput = (e) => {
     console.log(e.target.id, e.target.value);
     const value = parseInt(e.target.value) || 0;
-    
+
     const id = e.target.id;
     if (id === "hours") {
       setHours(value);
@@ -47,9 +47,10 @@ const CountDown = () => {
   };
   //console.log(hours, minutes, seconds);
 
-  //Start timer function
+  //Start timer function restricts the negative, empty or zero values
   const handleStart = () => {
-    if (hours < 0 || minutes < 0 || seconds < 0 || (hours === 0 && minutes === 0 && seconds === 0)){
+    if (hours < 0 || minutes < 0 || seconds < 0 || (hours === 0 && minutes === 0 && seconds === 0)
+      || (hours === "" && minutes === "" && seconds === "")) {
       alert("Invalid input values");
       return;
     } else {
@@ -58,12 +59,11 @@ const CountDown = () => {
   };
   //Run Timer logic for UseEffect
   const runTimer = () => {
-      // Stop the timer if all values reach 0
+    // Stop the timer if all values reach 0
     if (hours === 0 && minutes === 0 && seconds === 0) {
-      setIsStart(false);   
+      handleReset();
       alert("Timer is finished");
-        clearInterval(timerId);
-      }
+    }
     // Decrement seconds, then adjust minutes and hours if needed
     if (seconds > 0) {
       setSeconds((s) => s - 1);
@@ -75,12 +75,12 @@ const CountDown = () => {
       setMinutes(59);
       setSeconds(59);
     }
- 
+
   };
   //Use UseEffect to track hours, minutes or seconds
   useEffect(() => {
     let tid;
-    if(isStart) {
+    if (isStart) {
       tid = setInterval(() => {
         runTimer();
       }, 1000);

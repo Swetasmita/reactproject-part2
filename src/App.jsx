@@ -8,6 +8,7 @@ import RegistrationForm from "./components/form-validation/RegistrationForm";
 import LikeButton from "./components/likeButtons/LikeButton";
 import TicTacToe from "./components/TicTacToe/TicTacToe";
 import CountDown from "./components/countDownTimer/CountDown";
+import FAQComp from "./components/faq-component/FAQComp";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/likebuttons"  element={<LikeButton />} />
         <Route path="/tictactoe" element={<TicTacToe />} />
         <Route path="/countdowntimer" element={<CountDown /> } />
+        <Route path="/faqcomponent" element={<FAQComp /> } />
       </Routes>
     </Router>
   );

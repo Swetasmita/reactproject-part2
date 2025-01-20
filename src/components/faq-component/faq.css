@@ -1,0 +1,44 @@
+.faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.faq-box {
+  background-color: gray;
+  color:aqua;
+  margin: 10px;
+  padding: 20px;
+  width: 600px; 
+  border-radius: 12px;
+}
+.faq-box button{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: gray;
+    outline: none;
+    border:none;
+    color: purple;
+    cursor: pointer;
+}
+.question{
+    display: flex;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: left;
+    align-items: center;
+}
+.answer{
+    display:flex;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 12px 0 5px 40px;
+    color: rgb(238, 238, 168);
+}
+/* Rotate Arrow symbol to 90 degree  */
+.arrow{
+    transform: rotate(90deg);
+}

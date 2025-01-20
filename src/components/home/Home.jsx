@@ -27,6 +27,9 @@ const Home = () => {
       <Link to="/countdowntimer">
       <button>Countdown Timer</button>
       </Link>
+      <Link to="/faqcomponent">
+      <button>React FAQ Component</button>
+      </Link>
     </div>
   );
 };

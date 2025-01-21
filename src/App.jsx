@@ -9,6 +9,7 @@ import LikeButton from "./components/likeButtons/LikeButton";
 import TicTacToe from "./components/TicTacToe/TicTacToe";
 import CountDown from "./components/countDownTimer/CountDown";
 import FAQComp from "./components/faq-component/FAQComp";
+import ProgressBar from "./components/progressBar/ProgressBar";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/tictactoe" element={<TicTacToe />} />
         <Route path="/countdowntimer" element={<CountDown /> } />
         <Route path="/faqcomponent" element={<FAQComp /> } />
+        <Route path="/progressbar" element={<ProgressBar /> } />
       </Routes>
     </Router>
   );

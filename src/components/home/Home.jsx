@@ -30,6 +30,9 @@ const Home = () => {
       <Link to="/faqcomponent">
       <button>React FAQ Component</button>
       </Link>
+      <Link to="/progressbar">
+      <button>Progress Bar</button>
+      </Link>
     </div>
   );
 };

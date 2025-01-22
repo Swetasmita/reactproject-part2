@@ -33,6 +33,9 @@ const Home = () => {
       <Link to="/progressbar">
       <button>Progress Bar</button>
       </Link>
+      <Link to="/todolist">
+      <button>React Todo List</button>
+      </Link>
     </div>
   );
 };

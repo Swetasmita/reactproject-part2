@@ -1,7 +1,6 @@
-import React from 'react';
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaTrash } from "react-icons/fa";
-import "./todoList.css";
+import "./todolist.css";
 
 const TodoList = () => {
     const [text, setText] = useState("");

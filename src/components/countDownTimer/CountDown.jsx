@@ -82,7 +82,7 @@ const CountDown = () => {
     let tid;
     if (isStart) {
       tid = setInterval(() => {
-        runTimer();
+        runTimer();_
       }, 1000);
       setTimerId(tid);
     }

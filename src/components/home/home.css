@@ -1,8 +1,8 @@
 .home-container {
     display: flex;
-    width: 100vw;
+    width: 100%;
+    background: linear-gradient(to right, #0f0c29, #8e85f3, #36365a);
     height: 100vh;
-    background: rgb(81, 121, 240);
     box-shadow: 0px 0px 7px #ccc;
     justify-content: start;
     align-items: center;
